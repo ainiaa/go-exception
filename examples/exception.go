@@ -14,7 +14,7 @@ func main() {
 	fmt.Printf("e:%s\n", e)
 	fmt.Printf("e3:%s\n", e3)
 	fmt.Printf("error code:%d\n", e.GetCode())
-	fmt.Printf("error hasException:%v\n", exception.HasException(e))
+	fmt.Printf("error IsError:%v\n", exception.IsError(e))
 
 	err := errors.New("new error")
 	e4 := e.SubError(err)
